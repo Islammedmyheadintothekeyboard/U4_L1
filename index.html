@@ -9,6 +9,7 @@
     </head>
 
     <body>
+        <script src="index.js"></script>
         <h1 id="trans-title">Transposition Cipher</h1>
         <div id="short-explanation">The transposition cipher is a method of encrypting
              a message that uses a key of letters to rearrange the order of characters in the plaintext by columns.</div>
@@ -25,7 +26,28 @@
             </div>
         </div>
 
-        
+        <div class="radios">
+            <form>
+                <input type="radio" id="encrypt" name="cipher" onclick="makeEncryptBox()">
+                <label for="encrypt">Encryption</label>
+                <input type="radio" id="decrypt" name="cipher" onclick="makeDecryptBox()">
+                <label for="decrypt">Decryption</label>
+            </form>
+        </div>
+
+        <div class="column-cont">
+            <div id="keyword">
+                <label for="keywordBox">Enter Keyword here --></label>
+                <input type="text" id="keywordBox" value="Keyword">
+            </div>
+            <div id="word"> 
+                <label for="messageBox">Enter Message here --></label>
+                <input type="text" id="messageBox" value="Message">
+            </div>
+            <div id="submit">
+
+            </div>
+        </div>
 
 
     </body>

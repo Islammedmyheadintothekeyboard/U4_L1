@@ -31,11 +31,45 @@
     word-wrap: break-word;
 }
 
+#keyword {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 12px;
+    background-color: #DBCEA5;
+    border: #706a56 solid 5px;
+    margin-top: 5px;
+}
+
+#word {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 12px;
+    background-color: #DBCEA5;
+    border: #706a56 solid 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 .row-cont {
     display: flex;
     justify-content: center;
     padding-bottom: 20px;
     border-bottom: black solid 5px;
+}
+
+.radios {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.column-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 body {
