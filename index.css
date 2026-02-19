@@ -1,0 +1,25 @@
+#trans-title {
+    font-size: 50px;
+    color: #8A7650;
+    text-align: center;
+}
+
+#explanation {
+    color: #8E977D;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    border: black solid 1px;
+}
+
+.class-cont {
+    display: flex;
+    justify-content: space-around;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ECE7D1;
+}
