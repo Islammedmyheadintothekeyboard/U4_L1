@@ -31,14 +31,22 @@ function encryptMessage () {
         keyLetters[compareLetInd + 1] = letter;
     }
 
-    for (let i = 0; i < keyLetters.length; i++) {
+    if (keyword.length > message.length) {
+        for (let i = 0; i < message.length; i++) {
+            encryptedMessage += message[keyword.indexOf(keyLetters[i])];
+        }
+    }
+    
+    else {
+        for (let i = 0; i < keyLetters.length; i++) {
 
-        if (message.length%keyLetters.length >= keyword.indexOf(keyLetters[i], keyword.indexOf(keyLetters[i-1]))+1) {var overflow = 1}
-        else {var overflow = 0;}
+            if (message.length%keyLetters.length >= keyword.indexOf(keyLetters[i], keyword.indexOf(keyLetters[i-1]))+1) {var overflow = 1}
+            else {var overflow = 0;}
 
-        for (let j = 0; j < Math.floor(message.length / keyLetters.length) + overflow; j++) {
-            console.log(keyword.indexOf(keyLetters[i]));
-            encryptedMessage += message[keyword.indexOf(keyLetters[i]) + (keyword.length*j)];
+            for (let j = 0; j < Math.floor(message.length / keyLetters.length) + overflow; j++) {
+                console.log(keyword.indexOf(keyLetters[i]));
+                encryptedMessage += message[keyword.indexOf(keyLetters[i]) + (keyword.length*j)];
+            }
         }
     }
 
